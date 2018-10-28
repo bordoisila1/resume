@@ -34,9 +34,25 @@
 /*For the resume app*/
 @media (min-width:320px)  { /* smartphones, iPhone, portrait 480x320 phones */ }
 @media (min-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ }
-@media (min-width:641px)  { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ }
+@media (min-width:641px) and (max-width: 1024px)  {
+  .parent_container {
+    height: 700px;
+  }
+}
+
+@media (max-width: 640px) {
+  .parent_container {
+    height: 300px;
+  }
+}
+
 @media (min-width:961px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */  }
+
 @media (min-width:1025px) {
+  .parent_container {
+    height: 961px;
+  }
+
   .intro_text_container p {
     max-width: 300px;
     text-align: center;
@@ -54,10 +70,16 @@
 
   .nav_bar ul li {
     display: inline;
-    padding-right: 10px;
+    padding-right: 40px;
     list-style-type: none;
     font-family: "Andale Mono";
     font-size: x-large;
+  }
+}
+
+@media (max-width: 960px) {
+  .nav_bar ul li {
+    font-size: small;
   }
 }
 
@@ -74,13 +96,9 @@
 }
 
 .intro_text_container {
-  position: absolute;
-  top: 50px;
-  width: 75%;
-  text-align: left;
-  padding-left: 1em;
-  font-style: oblique;
-  font-size: medium;
+  display: grid;
+  max-width: 75%;
+  margin: auto;
 }
 
 .grid_image {
@@ -107,8 +125,30 @@
   max-width: 100%;
 }
 
-body {
-  background-image: url('http://localhost:3000/images/body_bg.jpeg')
+.parent_container {
+  position: relative;
+  opacity: 0.80;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("http://localhost:3000/images/img_parallax.jpg");
 }
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 30%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
 
 

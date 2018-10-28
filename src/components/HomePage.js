@@ -10,7 +10,7 @@ const HomePage = () => (
                         <Link to="/">Home</Link>
                     </li>
                     <li>
-                        <Link to="/about">About</Link>
+                        <Link to="/about">About-me</Link>
                     </li>
                     <li>
                         <Link to="/interests">Interests</Link>
@@ -30,19 +30,17 @@ const HomePage = () => (
 
 const Home = () => (
     <div>
-        <h2>Welcome to my Website</h2>
-        {/*<img className="intro_image" src="/images/banana_large.jpg"/>
-        <div className=""><p>I am Santanu Baruah,
-            a technology professional working for a Bank in the New York city.
-            My hobbies are making Chai and Chicken curry.
-            When I am bored, I go for long walks.</p>
-        </div>*/}
-        <div className="container">
+        {/*<div className="container">
             <div className="row">
                 <div className="col about_grid_item rounded">
-                    <h6 className="intro_text_container">I am Santanu Baruah, a technology professional in a bank. When I am not working there, I am busy walking<i class="em em-man-walking"></i> or making Chai.<i class="em em-coffee"></i></h6>
                     <a href="https://www.youtube.com/watch?v=6Tou8-Cz8is" target="_blank"><img className="grid_image_big rounded" src="/images/banana_large.jpg"/></a>
                 </div>
+            </div>
+        </div>*/}
+        <div className="bgimg_1">
+            <div className="caption">
+                <span className="border">SANTANU</span><br/><br/><br/>
+                <span className="border">BARUAH</span>
             </div>
         </div>
     </div>
@@ -52,6 +50,15 @@ const About = () => (
     <div>
         <h2>About me</h2>
         <div className="container">
+            <div className="row intro_text_container">
+                <h6 className="round">I am Santanu Baruah,
+                    a technology professional in a bank.
+                    When I am not working there,
+                    I am busy walking<i className="em em-man-walking"></i> or making Chai.
+                    <i className="em em-coffee"></i>
+                </h6>
+            </div>
+            <div className="w-100"></div>
             <div className="row">
                 <div className="col about_grid_item rounded">
                     <h5>Linkedin</h5>
