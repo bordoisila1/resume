@@ -30,17 +30,18 @@ const HomePage = () => (
 
 const Home = () => (
     <div>
-        {/*<div className="container">
-            <div className="row">
-                <div className="col about_grid_item rounded">
-                    <a href="https://www.youtube.com/watch?v=6Tou8-Cz8is" target="_blank"><img className="grid_image_big rounded" src="/images/banana_large.jpg"/></a>
-                </div>
-            </div>
-        </div>*/}
         <div className="bgimg_1">
-            <div className="caption">
+            <div className="caption_homepage">
                 <span className="border">SANTANU</span><br/><br/><br/>
                 <span className="border">BARUAH</span>
+            </div>
+            <div className="intro_text_container">
+                <h6 className="border">
+                    A technology professional in a bank, I love to solve business problems using technolgoy and people.
+                    When I am not working there,
+                    I am busy walking<i className="em em-man-walking"></i> or making my Chai.
+                    <i className="em em-coffee"></i>
+                </h6>
             </div>
         </div>
     </div>
@@ -48,17 +49,8 @@ const Home = () => (
 
 const About = () => (
     <div>
-        <h2>About me</h2>
+        <div className="text_box"><h2 className="border">ABOUT ME</h2></div>
         <div className="container">
-            <div className="row intro_text_container">
-                <h6 className="round">I am Santanu Baruah,
-                    a technology professional in a bank.
-                    When I am not working there,
-                    I am busy walking<i className="em em-man-walking"></i> or making Chai.
-                    <i className="em em-coffee"></i>
-                </h6>
-            </div>
-            <div className="w-100"></div>
             <div className="row">
                 <div className="col about_grid_item rounded">
                     <h5>Linkedin</h5>
@@ -85,7 +77,7 @@ const About = () => (
 const Interests = ({ match }) =>
     (
         <div>
-            <h2>Topics</h2>
+            <div className="text_box"><h2 className="border">MY INTERESTS</h2></div>
             <ul className="nav_bar">
                 <li>
                     <a href="https://www.citibikenyc.com/">
