@@ -5,7 +5,7 @@ export const Interests = ({ match }) =>
     (
         <div>
             <div className="text_box"><h2 className="border">MY INTERESTS</h2></div>
-            <ul className="nav_bar">
+            <ul>
                 <li>
                     <a href="https://www.citibikenyc.com/">
                         <img src="https://d21xlh2maitm24.cloudfront.net/nyc/01unlock2.JPG?mtime=20160428123800"/>
@@ -31,7 +31,7 @@ export const Interests = ({ match }) =>
         </div>
     );
 
-export const Interest = ({ match }) => (
+const Interest = ({ match }) => (
     <div>
         <h3>{match.params.interestId}</h3>
     </div>
