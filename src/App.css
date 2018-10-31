@@ -510,6 +510,7 @@ modal:target {
   width: 80%;
   height: 30%;
   color: #fff;
+  overflow: scroll;
 }
 
 /* The Close Button */
