@@ -44,55 +44,22 @@ let interests = [
         url: "",
         img: "https://3c1703fe8d.site.internapcdn.net/newman/gfx/news/hires/2016/578650fe544c4.jpg",
         alt: "Logo of music"
-    },{
-        title: "Music",
-        label: "Music",
-        path: "/music",
+    },
+    {
+        title: "Programming",
+        label: "Programming",
+        path: "/programming",
         url: "",
-        img: "https://3c1703fe8d.site.internapcdn.net/newman/gfx/news/hires/2016/578650fe544c4.jpg",
-        alt: "Logo of music"
-    },{
-        title: "Music",
-        label: "Music",
-        path: "/music",
+        img: "https://www.class-central.com/bundles/classcentralsite/images/icon-programming-and-software-development.png",
+        alt: "Logo of programming"
+    },
+    {
+        title: "Guitars",
+        label: "Guitars",
+        path: "/guitars",
         url: "",
-        img: "https://3c1703fe8d.site.internapcdn.net/newman/gfx/news/hires/2016/578650fe544c4.jpg",
-        alt: "Logo of music"
-    },{
-        title: "Music",
-        label: "Music",
-        path: "/music",
-        url: "",
-        img: "https://3c1703fe8d.site.internapcdn.net/newman/gfx/news/hires/2016/578650fe544c4.jpg",
-        alt: "Logo of music"
-    },{
-        title: "Music",
-        label: "Music",
-        path: "/music",
-        url: "",
-        img: "https://3c1703fe8d.site.internapcdn.net/newman/gfx/news/hires/2016/578650fe544c4.jpg",
-        alt: "Logo of music"
-    },{
-        title: "Music",
-        label: "Music",
-        path: "/music",
-        url: "",
-        img: "https://3c1703fe8d.site.internapcdn.net/newman/gfx/news/hires/2016/578650fe544c4.jpg",
-        alt: "Logo of music"
-    },{
-        title: "Music",
-        label: "Music",
-        path: "/music",
-        url: "",
-        img: "https://3c1703fe8d.site.internapcdn.net/newman/gfx/news/hires/2016/578650fe544c4.jpg",
-        alt: "Logo of music"
-    },{
-        title: "Music",
-        label: "Music",
-        path: "/music",
-        url: "",
-        img: "https://3c1703fe8d.site.internapcdn.net/newman/gfx/news/hires/2016/578650fe544c4.jpg",
-        alt: "Logo of music"
+        img: "https://media.sweetwater.com/api/i/f-webp__q-82__ha-8ddb83907276bbcf__hmac-6ad6119bc41cc0f2ed2cbb2567235e35f91807fb/images/closeup/750-GRX20ZBKN_detail1.jpg.auto.webp",
+        alt: "Logo of Guitar"
     }
 ];
 

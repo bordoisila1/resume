@@ -7,10 +7,10 @@ export const Home = () => (
                 <div className="col">
                     <iframe className="hide_non_desktop" width="560"
                             height="315"
-                            src="https://www.youtube.com/embed/F_6Emq5dyXQ"
-                            frameborder="0"
+                            src="https://www.youtube.com/embed/3lIyDxfUhxM?autoplay=1"
+                            frameBorder="0"
                             allow="autoplay; encrypted-media"
-                            allowfullscreen></iframe>
+                            allowFullScreen></iframe>
                     <div className="caption_homepage">
                         <span className="border hvr-bounce-to-left">SANTANU</span><br className="hide_br"/><br className="hide_br"/><br/>
                         <span className="border hvr-bounce-to-left">BARUAH</span>

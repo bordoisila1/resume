@@ -8,16 +8,16 @@ export const Interests = ({ match }) =>
         <div>
             <div className="text_box"><h2 className="border">MY INTERESTS</h2></div>
             <div className="container interest_flex_container">
-                <div className="row">
+                <div className="row scroll_animation">
                     {interests.map((item, index)=> (
-                        <>
-                        <div class="col  hvr-curl-bottom-right" style={{padding: 0, margin: 15}}>
-                            <span>{item.label}</span><br/>
-                            <Link to={`${match.url}${item.path}`}>
-                                <img className="interest_item" src={item.img} alt={item.alt}/>
-                            </Link>
+                        <div key={index}>
+                            <div className="col  hvr-grow-shadow" style={{padding: 0, margin: 15}}>
+                                <span>{item.label}</span><br/>
+                                <Link to={`${match.url}${item.path}`}>
+                                    <img className="interest_item" src={item.img} alt={item.alt}/>
+                                </Link>
+                            </div>
                         </div>
-                            </>
                     ))}
                 </div>
             </div>
@@ -26,14 +26,17 @@ export const Interests = ({ match }) =>
             <Route
                 exact
                 path={match.path}
-                render={() => <h4 className="text_box"><span className="border">Please select a topic.</span></h4>}
+                render={() => (
+                    <>
+
+                    </>
+                )}
             />
         </div>
     );
 
 const Interest = ({ match }) => (
     <div>
-        <h4>{getInterestText(match.params.interestId)}</h4>
        <Modal description={getInterestText(match.params.interestId)} display={true}/>
     </div>
 );

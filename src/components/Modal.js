@@ -26,6 +26,7 @@ const handleDisplayModel = (e) => {
 class Modal extends React.Component {
 
     constructor(props) {
+        console.log("Inside constructor")
         super(props)
         this.state = {
             ...props
@@ -33,16 +34,24 @@ class Modal extends React.Component {
     }
 
     componentWillReceiveProps(nextProps) {
-        this.setState ({
+        console.log("Inside WRP")
+        this.state = {
             ...nextProps
-        })
+        }
     }
 
     componentDidUpdate() {
+        console.log("Inside CDU")
+        handleDisplayModel()
+    }
+
+    componentDidMount() {
+        console.log("Inside CDM")
         handleDisplayModel()
     }
 
     render() {
+        console.log(this.state.description)
         return(
             <div className="modal">
                 <div className="modal-content">

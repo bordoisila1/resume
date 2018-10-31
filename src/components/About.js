@@ -18,7 +18,7 @@ export const About = () => (
 );
 
 const AboutBox = ({item, key}) => (
-    <div className="col about_grid_item rounded hvr-bounce-out">
+    <div className="col about_grid_item rounded hvr-grow-shadow">
         <h5>{item.title}</h5>
         <a className="bounce" href={item.url}
            target="_blank">
