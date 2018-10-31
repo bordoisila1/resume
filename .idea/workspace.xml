@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ab5d0c22-e213-408b-9d22-7388ae6a5481" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/santanu-resume.iml" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="ab5d0c22-e213-408b-9d22-7388ae6a5481" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -403,12 +399,12 @@
       <updated>1539571933772</updated>
       <workItem from="1539571937277" duration="1308000" />
       <workItem from="1539955184406" duration="21049000" />
-      <workItem from="1540961438014" duration="507000" />
+      <workItem from="1540961438014" duration="635000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="68375000" />
+    <option name="totallyTimeSpent" value="68503000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="24" width="1920" height="989" extended-state="0" />
