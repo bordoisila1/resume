@@ -13,7 +13,7 @@ export const aboutMeItems = [
     },
     {
         title: "Currently Listening to...",
-        url: "https://www.linkedin.com/in/santanu-baruah-gs/",
+        url: "https://open.spotify.com/playlist/37i9dQZF1DX6uhsAfngvaD",
         img: "/images/cas_logo.jpg"
     },
     {
