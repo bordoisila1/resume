@@ -109,7 +109,7 @@
     color: #fff;
     padding: 25px;
     font-size: 14px;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
   }
 
 /*Interests flex box styles */
@@ -536,4 +536,14 @@ modal:target {
 
 .container:hover .scroll_animation {
   animation-play-state: paused;
+}
+
+.icon_contacts {
+  height: 15px;
+  max-width: 100%;
+  margin-right: 3px;
+}
+
+.about_grid_item div{
+  text-align: center;
 }

@@ -20,7 +20,7 @@ export const Home = () => (
         </div>
         <div className="intro_text_container">
             <h6 className="border hvr-bounce-to-left">
-                A technology professional in a bank in NYC, I love to solve business problems using technology and people.
+                A technology professional in a bank in NYC, originally from <a href="https://en.wikipedia.org/wiki/Assam">Assam - অসমীয়া</a>, I love to solve business problems using technology and people.
                 When I am not working there,
                 I am busy walking<i className="em em-man-walking"></i> or making my Chai.
                 <i className="em em-coffee"></i>
