@@ -122,6 +122,18 @@
     max-width: 50px;
     max-height: 40px;
   }
+
+  .grid_image {
+    height: auto;
+    width: auto;
+    max-width: 80px !important;
+    max-height: 55px !important;
+  }
+
+  h5, .interest_flex_container > div > div > div > span {
+    font-size: 0.7rem;
+  }
+
 }
 
 @media (min-width:641px) and (max-width: 1024px)  {
