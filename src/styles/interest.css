@@ -1,0 +1,82 @@
+/*For phones only*/
+@media (max-width: 599px) {
+    /*Interests flex box styles */
+    .interest_flex_container .row{
+        flex-wrap: nowrap !important;
+        overflow: scroll;
+    }
+
+    .interest_flex_container img {
+        max-width: 50px;
+        max-height: 40px;
+    }
+
+    .interest_flex_container > div > div > div > span {
+        font-size: 0.7rem;
+    }
+
+    .text_box .border {
+        font-size: 10px !important;
+        letter-spacing: 3px !important;
+        padding: 12px !important;
+    }
+}
+
+/*For Tablet portrait up*/
+@media (min-width: 600px) {
+    .interest_flex_container .row{
+        flex-wrap: nowrap !important;
+        overflow: scroll;
+    }
+}
+
+/*For Tablet landscape up*/
+@media (min-width: 900px) {
+    .interest_flex_container .row{
+        flex-wrap: nowrap !important;
+        overflow: scroll;
+    }
+}
+
+/*For-desktop-up*/
+@media (min-width: 1200px) {
+    .interest_flex_container .row{
+        flex-wrap: nowrap !important;
+        overflow: scroll;
+        overflow-y: hidden;
+        scroll-behavior: auto !important;
+    }
+}
+
+/*For BIG Desktop up*/
+@media (min-width: 1800px) {
+
+}
+
+@media all {
+    .interest_flex_container .row {
+        overflow-y: hidden;
+    }
+
+    /*Scroll Animation */
+    .container .scroll_animation {
+        animation: slide infinite 3s alternate;
+    }
+
+    .container:hover .scroll_animation {
+        animation-play-state: paused;
+    }
+
+    .text_box .border {
+        background-color: #111;
+        color: #fff;
+        padding: 18px;
+        font-size: 25px;
+        letter-spacing: 10px;
+    }
+
+    .interest_item {
+        width: 150px;
+        height: 100px;
+    }
+}

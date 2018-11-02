@@ -1,5 +1,5 @@
 import React from 'react'
-import interests from '../lib/interests'
+import '../../styles/modal.css'
 
 window.onclick = (e) => {
     let modal = document.querySelector('.modal');
@@ -26,7 +26,6 @@ const handleDisplayModel = (e) => {
 class Modal extends React.Component {
 
     constructor(props) {
-        console.log("Inside constructor")
         super(props)
         this.state = {
             ...props
@@ -34,19 +33,16 @@ class Modal extends React.Component {
     }
 
     componentWillReceiveProps(nextProps) {
-        console.log("Inside WRP")
         this.state = {
             ...nextProps
         }
     }
 
     componentDidUpdate() {
-        console.log("Inside CDU")
         handleDisplayModel()
     }
 
     componentDidMount() {
-        console.log("Inside CDM")
         handleDisplayModel()
     }
 

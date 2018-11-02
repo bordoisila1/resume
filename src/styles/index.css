@@ -1,0 +1,24 @@
+/*For phones only*/
+@media (max-width: 599px) {
+
+}
+
+/*For Tablet portrait up*/
+@media (min-width: 600px) {
+
+}
+
+/*For Tablet landscape up*/
+@media (min-width: 900px) {
+
+}
+
+/*For-desktop-up*/
+@media (min-width: 1200px) {
+
+}
+
+/*For BIG Desktop up*/
+@media (min-width: 1800px) {
+
+}

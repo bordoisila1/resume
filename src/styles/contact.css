@@ -1,0 +1,50 @@
+/*For phones only*/
+@media (max-width: 599px) {
+
+}
+
+/*For Tablet portrait up*/
+@media (min-width: 600px) {
+}
+
+/*For Tablet landscape up*/
+@media (min-width: 900px) {
+}
+
+/*For-desktop-up*/
+@media (min-width: 1200px) {
+
+}
+
+/*For BIG Desktop up*/
+@media (min-width: 1800px) {
+
+}
+
+@media all {
+    .about_grid_item div {
+        text-align: center;
+    }
+
+    .icon_contacts {
+        height: 25px;
+        max-width: 100%;
+        margin-right: 3px;
+    }
+
+    .text_box {
+        width: 100%;
+        color: #000;
+        width: 100%;
+        margin: auto;
+        text-align: center;
+    }
+
+    .text_box .border {
+        background-color: #111;
+        color: #fff;
+        padding: 18px;
+        font-size: 25px;
+        letter-spacing: 10px;
+    }
+}

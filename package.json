@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "dompurify": "^1.0.8",
+    "npm": "^6.4.1",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
     "react-router": "^4.3.1",

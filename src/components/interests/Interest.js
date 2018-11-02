@@ -1,7 +1,8 @@
 import React from 'react'
 import { Route, Link } from "react-router-dom";
-import interests from "../lib/interests";
-import Modal from './Modal'
+import interests from "../../lib/interests";
+import Modal from '../modal/Modal'
+import '../../styles/interest.css'
 
 export const Interests = ({ match }) =>
     (

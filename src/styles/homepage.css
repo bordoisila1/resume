@@ -1,0 +1,78 @@
+/*For phones only*/
+@media (max-width: 599px) {
+
+}
+
+/*For Tablet portrait up*/
+@media (min-width: 600px) {
+
+}
+
+/*For Tablet landscape up*/
+@media (min-width: 900px) {
+    .base-container__nav-bar {
+        max-width: 100%;
+        margin-left: 1%;
+    }
+
+    nav .base-container__nav-bar--logo {
+        content: url("../images/nigoni_logo.png");
+        max-height: 100px;
+    }
+
+    nav {
+        align-items: center;
+        font-family: "Trebuchet MS", Helvetica, sans-serif;
+        font-size: larger;
+    }
+
+    nav ul {
+        display: flex;
+        margin-bottom: 0;
+    }
+
+    nav ul li {
+        padding-right: 2%;
+    }
+
+    nav a:active, a:visited {
+        color: #dddddd;
+    }
+
+    nav li a {
+        color: #dddddd;
+        white-space: nowrap;
+    }
+
+    /*nav li:not(:first-child):before {
+        content: " | ";
+        color: #dddddd;
+    }*//*
+
+    nav li:not(:last-child) a:after {
+        content: " | ";
+        color: #dddddd;
+        padding-right: 20%;
+    }*/
+
+}
+
+/*For-desktop-up*/
+@media (min-width: 1200px) {
+}
+
+/*For BIG Desktop up*/
+@media (min-width: 1800px) {
+
+}
+
+@media all  {
+    html, body, .base-container {
+        height: 100%;
+        background: url("https://images.pexels.com/photos/875858/pexels-photo-875858.png?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260") no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+}

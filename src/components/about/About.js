@@ -1,5 +1,6 @@
 import React from 'react'
-import {aboutMeItems} from '../lib/about-me-items'
+import {aboutMeItems} from '../../lib/about-me-items'
+import '../../styles/about.css'
 
 export const About = () => (
     <div>
@@ -20,7 +21,7 @@ export const About = () => (
 const AboutBox = ({item, key}) => (
     <div className="col about_grid_item rounded hvr-bounce-out">
         <h5>{item.title}</h5>
-        <a className="bounce" href={item.url}
+        <a href={item.url}
            target="_blank">
             <img className="grid_image rounded"
                  src={item.img}/>

@@ -1,0 +1,76 @@
+/*For phones only*/
+@media (max-width: 599px) {
+
+}
+
+/*For Tablet portrait up*/
+@media (min-width: 600px) {
+
+}
+
+/*For Tablet landscape up*/
+@media (min-width: 900px) {
+
+}
+
+/*For-desktop-up*/
+@media (min-width: 1200px) {
+
+}
+
+/*For BIG Desktop up*/
+@media (min-width: 1800px) {
+
+}
+
+@media all {
+    /* The Close Button */
+    .close {
+        color: #aaaaaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+        position: relative;
+        padding: 0 0 0 95%;
+    }
+
+    .close:hover,
+    .close:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    /* The Modal (background) */
+    .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        padding-top: 20%; /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: #111; /* Fallback color */
+        background-color: rgba(1,1,1,0.4); /* Black w/ opacity */
+        transition: all ease 1s;
+        pointer-events: none;
+    }
+
+    modal:target {
+        pointer-events: auto;
+    }
+
+    /* Modal Content */
+    .modal-content {
+        background-color: #111;
+        margin: auto;
+        padding: 20px;
+        border: 1px solid #dee2e6;
+        width: 80%;
+        height: 30%;
+        color: #fff;
+        overflow: scroll;
+    }
+}
