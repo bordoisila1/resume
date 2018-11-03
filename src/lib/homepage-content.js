@@ -2,7 +2,7 @@ import React from 'react'
 
 const homeContentItems =
     {
-        title: "Welcome to my Website",
+        title: "Hey You!",
         mainDescription: "<p>Lorem ipsum dolor sit amet, consectetur adipiscing " +
         "elit. Suspendisse sit amet sapien ante. Nullam at congue nisl. Donec ut" +
         "egestas ipsum, et auctor ante. Aenean at elit malesuada, porttitor magna " +
@@ -91,7 +91,9 @@ const homeContentItems =
         "urpis, nec mollis lectus pulvinar pharetra. Sed lobortis quam nec im" +
         "perdiet consequat.\n" +
         "\n" +
-        "Mauris a neque pharetra, </p>"
+        "Mauris a neque pharetra, </p>",
+        leftImage: '/images/buddha.jpg',
+        rightImage: '/images/silkroads_book_logo.jpg'
     };
 
 export default homeContentItems

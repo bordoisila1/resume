@@ -47,7 +47,6 @@ class Modal extends React.Component {
     }
 
     render() {
-        console.log(this.state.description)
         return(
             <div className="modal">
                 <div className="modal-content">

@@ -1,29 +1,35 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 import {navRoutes} from "../lib/routes";
-import '../styles/homepage.css'
+import '../styles/basePage.css'
 
 const HomePage = () => (
     <Router>
-        <div className="base-container">
-            <div className="base-container__nav-bar container">
+        <>
+            <div className="basepage container">
                 <nav className="row">
-                    <div className="base-container__nav-bar--logo">
+                    <div className="col-push-12">
+                        <div className="basepage__logo">
+                        </div>
                     </div>
-                    <div className="col">
-                        <ul>
+                    <div className="col-12 col-md-8 align-self-center basepage__nav-links container">
+                        <ul className="row">
                             {navRoutes.map((route, index) => (
-                                <li>
+                                <li className="col text-center">
                                     <Link
                                         key={index}
                                         className=""
                                         to={route.path}
                                         component={route.component}>
                                         {route.label}
-                                        </Link>
+                                    </Link>
                                 </li>
                             ))}
                         </ul>
+                    </div>
+                    <div className="d-none d-md-block">
+                        <div className="basepage__nav_right">
+                        </div>
                     </div>
                 </nav>
             </div>
@@ -35,7 +41,7 @@ const HomePage = () => (
                     <Route component={NoMatch} status={404}/>
                 </Switch>
             </div>
-        </div>
+        </>
     </Router>
 );
 
