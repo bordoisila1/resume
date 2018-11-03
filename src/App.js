@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import HomePage from './components/BasePage';
+import HomePage from './components/core/BasePage';
 import { BrowserRouter as Router } from "react-router-dom";
 import './App.css'
 import Spinner from 'react-spinkit'
@@ -24,7 +24,7 @@ class App extends Component {
 
         return (
             <Router>
-                <div className="base">
+                <div>
                     <HomePage/>
              </div>
          </Router>

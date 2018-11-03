@@ -1,7 +1,7 @@
 /*For phones only*/
 @media (max-width: 599px) {
     .basepage__nav-links a {
-        font-size: 12px;
+        font-size: 10px;
     }
 
     .basepage__logo {

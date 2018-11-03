@@ -1,7 +1,8 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
-import {navRoutes} from "../lib/routes";
-import '../styles/basePage.css'
+import {navRoutes} from "../../lib/routes";
+import '../../styles/basePage.css'
+import {NoMatch} from './NoMatch'
 
 const HomePage = () => (
     <Router>
@@ -18,7 +19,6 @@ const HomePage = () => (
                                 <li className="col text-center">
                                     <Link
                                         key={index}
-                                        className=""
                                         to={route.path}
                                         component={route.component}>
                                         {route.label}
@@ -36,24 +36,19 @@ const HomePage = () => (
             <div>
                 <Switch>
                     {navRoutes.map((route, index) => (
-                        <Route key= {index} exact={route.exact} path={route.path} component={route.component} />
+                        //Creates a Route that takes a path and renders a React Element based on the props being passed
+                        <Route key={index}
+                               exact={route.exact}
+                               path={route.path}
+                               render={(props)=>
+                                   React.createElement(route.component, {...props, ...route})}
+                        />
                     ))}
                     <Route component={NoMatch} status={404}/>
                 </Switch>
             </div>
         </>
     </Router>
-);
-
-const NoMatch = ({ location }) => (
-    <div>
-        <h3>
-            Oops !! 404<code>{location.pathname}</code> not found
-        </h3>
-        <a href="">
-            <img src="https://media.giphy.com/media/MdXXZh65YfC7e/giphy.gif"/>
-        </a>
-    </div>
 );
 
 export default HomePage;

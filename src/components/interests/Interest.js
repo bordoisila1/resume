@@ -15,7 +15,7 @@ export const Interests = ({ match }) =>
                             <div className="col  hvr-grow-shadow" style={{padding: 0, margin: 15}}>
                                 <span>{item.label}</span><br/>
                                 <Link to={`${match.url}${item.path}`}>
-                                    <img className="interest_item" src={item.img} alt={item.alt}/>
+                                    <img className="interest_item" src={item.leftImage} alt={item.alt}/>
                                 </Link>
                             </div>
                         </div>

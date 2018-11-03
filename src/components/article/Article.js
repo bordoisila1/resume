@@ -1,15 +1,15 @@
 import React from 'react'
 import '../../styles/article.css'
-import DOMPurify from "dompurify";
+import {_dps} from '../../utils/sanitize'
 
 class Article extends React.Component {
     constructor(props) {
         super(props)
         this.props = props
-        this.articleTitle = DOMPurify.sanitize(this.props.article.title)
-        this.articleBody = DOMPurify.sanitize(this.props.article.mainDescription)
-        this.articleLeftImage = DOMPurify.sanitize(this.props.article.leftImage)
-        this.articleRightImage = DOMPurify.sanitize(this.props.article.rightImage)
+        this.title = _dps(this.props.article.title)
+        this.description = _dps(this.props.article.description)
+        this.leftImge = _dps(this.props.article.leftImage)
+        this.rightImage = _dps(this.props.article.rightImage)
     }
 
     render() {
@@ -19,28 +19,28 @@ class Article extends React.Component {
                 <div className="container-fluid">
                     <div className="row">
                         <div className="col article__title text-center">
-                            <span>{this.articleTitle}</span>
+                            <span>{this.title}</span>
                         </div>
                     </div>
                 </div>
                 <div className="container-fluid">
-                    <div className="row">
-                        <div className="col">
-                            <br/>
-                        </div>
+                 <div className="row">
+                    <div className="col">
+                        <br/>
                     </div>
+                 </div>
                 </div>
                 <div className="container-fluid article__content">
                     <div className="row">
                         <div className="col-md-2 text-center">
-                            <img class='img-fluid rounded' src={this.articleLeftImage}/>
+                            <img class='img-fluid rounded' src={this.leftImge}/>
                         </div>
                         <div className="col-md-8 text-justify">
-                            <span dangerouslySetInnerHTML={{ __html: this.articleBody }}>
+                            <span dangerouslySetInnerHTML={{ __html: this.description }}>
                             </span>
                         </div>
                         <div className="col-md-2 text-center">
-                            <img className='d-none d-md-block img-fluid rounded' src={this.articleRightImage}/>
+                            <img className='d-none d-md-block img-fluid rounded' src={this.rightImage}/>
                         </div>
                     </div>
                 </div>

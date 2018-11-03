@@ -2,8 +2,8 @@ import React from 'react'
 
 const homeContentItems =
     {
-        title: "Hey You!",
-        mainDescription: "<p>Lorem ipsum dolor sit amet, consectetur adipiscing " +
+        title: "The beginning!",
+        description: "<p>Lorem ipsum dolor sit amet, consectetur adipiscing " +
         "elit. Suspendisse sit amet sapien ante. Nullam at congue nisl. Donec ut" +
         "egestas ipsum, et auctor ante. Aenean at elit malesuada, porttitor magna " +
         "nec, auctor odio. Donec sed semper erat. Maecenas enim ipsum, placerat ac " +

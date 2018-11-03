@@ -1,0 +1,57 @@
+/*For phones only*/
+@media (max-width: 599px) {
+    .articles__image {
+        display: none;
+    }
+
+    .articles__title {
+        font-size: 12px !important;
+    }
+
+    .articles {
+        max-height: 150px !important;
+    }
+}
+
+/*For Tablet portrait up*/
+@media (min-width: 600px) {
+
+}
+
+/*For Tablet landscape up*/
+@media (min-width: 900px) {
+
+}
+
+/*For-desktop-up*/
+@media (min-width: 1200px) {
+
+}
+
+/*For BIG Desktop up*/
+@media (min-width: 1800px) {
+
+}
+
+@media all {
+    .articles {
+        overflow-x: hidden;
+        overflow-y: auto;
+        max-height: 350px;
+    }
+
+    .articles__title {
+        font-family: "Avenir Light", Helvetica, Arial, sans-serif;
+        font-size: 16px;
+        color: white;
+    }
+
+    .articles__image {
+        height: 20px;
+        width: 30px;
+    }
+
+    .articles__wordcount {
+        color: #D3D3D3;
+    }
+}
