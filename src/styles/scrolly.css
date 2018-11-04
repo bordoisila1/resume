@@ -26,12 +26,12 @@
     .progress-container {
         width: 100%;
         height: 8px;
-        background: #ccc;
+        background: #F0F0F0;
     }
 
     .progress-bar {
         height: 8px;
-        background: #4caf50;
+        background: linear-gradient(to right, #33ccff 0%, #ffc520 100%);
         width: 0%;
     }
 }

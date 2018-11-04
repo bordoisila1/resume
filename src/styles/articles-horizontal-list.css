@@ -1,9 +1,5 @@
 /*For phones only*/
 @media (max-width: 599px) {
-    .articles__image {
-        display: none;
-    }
-
     .articles__title {
         font-size: 12px !important;
     }
@@ -38,17 +34,13 @@
         overflow-x: hidden;
         overflow-y: auto;
         max-height: 350px;
+        border-radius: 0 0px 10px 10px;
     }
 
     .articles__title {
         font-family: "Avenir Light", Helvetica, Arial, sans-serif;
         font-size: 16px;
         color: white;
-    }
-
-    .articles__image {
-        height: 20px;
-        width: 30px;
     }
 
     .articles__wordcount {

@@ -19,10 +19,9 @@ class Scrolly extends React.Component {
     render() {
         return (
             <div className="header">
-                <h2>Scroll for more articles</h2>
+                <h2>{this.state.scrollHeading}</h2>
                 <div className="progress-container">
                     <div className="progress-bar" style={{width:`${this.state.scrollPercentage}%`}}>
-                        {this.state.scrollPercentage} %
                      </div>
                 </div>
             </div>
