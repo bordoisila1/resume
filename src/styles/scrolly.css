@@ -31,7 +31,7 @@
 
     .progress-bar {
         height: 8px;
-        background: linear-gradient(to right, #33ccff 0%, #ffc520 100%);
+        background: #cd5c5c;
         width: 0%;
     }
 }

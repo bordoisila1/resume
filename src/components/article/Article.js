@@ -5,11 +5,12 @@ import {_dps} from '../../utils/sanitize'
 class Article extends React.Component {
     constructor(props) {
         super(props)
-        this.state = props
+        this.state = {...props}
         this.title = _dps(this.state.article.title)
         this.description = _dps(this.state.article.description)
         this.leftImge = _dps(this.state.article.leftImage)
         this.rightImage = _dps(this.state.article.rightImage)
+        this.category = this.state.category
     }
 
     render() {

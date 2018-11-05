@@ -94,4 +94,8 @@
     .sticky {
         position: fixed;
     }
+
+    .footerLogo img{
+        height: 20px;
+    }
 }

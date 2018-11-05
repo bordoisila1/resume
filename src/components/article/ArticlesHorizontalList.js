@@ -11,7 +11,7 @@ class ArticlesHorizontalList extends React.Component {
         this.containerClass = this.props.containerClass
             ? this.props.containerClass
             : "articles"
-        this.state = {scrollPercentage:0}
+        this.state = {scrollPercentage:0, articles: this.props.articles}
     }
 
     handleScroll = (e) => {
@@ -26,10 +26,10 @@ class ArticlesHorizontalList extends React.Component {
         return (
             <div className="articles__parent-container" onScroll={this.handleScroll}>
                 <Scrolly scrollPercentage={this.state.scrollPercentage} scrollHeading={this.props.scrollHeading}/>
-                <div className="articles container border">
+                <div className="articles container-fluid border">
                     <div className="row">
                         <div className="container col-8">
-                            {this.props.articles.map((item, index) => (
+                            {this.state.articles.map((item, index) => (
                                 <div key={index} className="articles__item row m-l-2">
                                     <Link to={`${item.url}${item.path}`}>
                                         {/*<img src={item.leftImage} className="articles__image col-2"></img>*/}

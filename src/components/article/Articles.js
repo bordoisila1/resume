@@ -8,6 +8,13 @@ class Articles extends React.Component {
         super(props)
         this.state = {...props}
         this.match = this.props.match
+        this.state = {
+            featuredArticle: this.props.featuredArticle ? this.props.featuredArticle :
+                this.props.articles[this.props.articles.length - 1],
+            articles: this.props.articles,
+            articlesCategory: this.props.articlesCategory
+        }
+
     }
 
     render() {
@@ -21,7 +28,7 @@ class Articles extends React.Component {
                         </div>
                     </div>
                 </div>
-                <Article article={this.state.articles[1]}/>
+                <Article article={this.state.featuredArticle}/>
             </div>
         )
     }
