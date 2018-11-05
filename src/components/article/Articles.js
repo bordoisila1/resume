@@ -6,16 +6,14 @@ import ArticlesHorizontalList from "./ArticlesHorizontalList";
 class Articles extends React.Component {
     constructor(props) {
         super(props)
-        this.props = {...props}
-        this.articles = this.props.articles
+        this.state = {...props}
         this.match = this.props.match
     }
 
     render() {
-        const first = (items) => items[0];
         return (
             <div className="container">
-                <ArticlesHorizontalList articles={this.articles}/>
+                <ArticlesHorizontalList articles={this.state.articles}/>
                 <div className="container-fluid">
                     <div className="row">
                         <div className="col">
@@ -23,7 +21,7 @@ class Articles extends React.Component {
                         </div>
                     </div>
                 </div>
-                <Article article={this.articles[1]}/>
+                <Article article={this.state.articles[1]}/>
             </div>
         )
     }

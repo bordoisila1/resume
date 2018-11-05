@@ -5,11 +5,11 @@ import {_dps} from '../../utils/sanitize'
 class Article extends React.Component {
     constructor(props) {
         super(props)
-        this.props = props
-        this.title = _dps(this.props.article.title)
-        this.description = _dps(this.props.article.description)
-        this.leftImge = _dps(this.props.article.leftImage)
-        this.rightImage = _dps(this.props.article.rightImage)
+        this.state = props
+        this.title = _dps(this.state.article.title)
+        this.description = _dps(this.state.article.description)
+        this.leftImge = _dps(this.state.article.leftImage)
+        this.rightImage = _dps(this.state.article.rightImage)
     }
 
     render() {
@@ -33,7 +33,7 @@ class Article extends React.Component {
                 <div className="container-fluid article__content">
                     <div className="row">
                         <div className="col-md-2 text-center">
-                            <img class='img-fluid rounded' src={this.leftImge}/>
+                            <img className='img-fluid rounded' src={this.leftImge}/>
                         </div>
                         <div className="col-md-8 text-justify">
                             <span dangerouslySetInnerHTML={{ __html: this.description }}>
