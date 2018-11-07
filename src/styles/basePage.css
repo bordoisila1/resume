@@ -5,8 +5,8 @@
     }
 
     .basepage__nav-logo {
-        max-height: 40px !important;
-        width: 100px;
+        max-height: 60px !important;
+        width: 200px;
     }
 
     .basepage__nav-links.container > ul {
@@ -69,7 +69,7 @@
     }
 
     .basepage__nav-logo {
-        content: url("../images/nigoni_logo.png");
+        content: url("../images/nigoni_blue_logo.png");
         max-height: 100px;
     }
 
@@ -87,8 +87,9 @@
 
     .basepage__nav__container {
         z-index: 100;
-        background-image: linear-gradient(to bottom, rgba(255, 255, 253, 0.98), rgba(222, 54, 54, 0.86));
         top: 0;
+        background-color: #3a3636;
+        opacity: 0.7;
     }
 
     .sticky {
@@ -97,5 +98,9 @@
 
     .footerLogo img{
         height: 20px;
+    }
+
+    .footerTitle a:visited, .footerTitle a:hover {
+        color: #bdbdbd;
     }
 }

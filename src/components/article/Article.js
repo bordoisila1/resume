@@ -5,16 +5,14 @@ import {_dps} from '../../utils/sanitize'
 class Article extends React.Component {
     constructor(props) {
         super(props)
-        this.state = {...props}
-        this.title = _dps(this.state.article.title)
-        this.description = _dps(this.state.article.description)
-        this.leftImge = _dps(this.state.article.leftImage)
-        this.rightImage = _dps(this.state.article.rightImage)
-        this.category = this.state.category
+        this.title = _dps(this.props.article.title)
+        this.description = _dps(this.props.article.description)
+        this.leftImge = _dps(this.props.article.leftImage)
+        this.rightImage = _dps(this.props.article.rightImage)
+        this.category = this.props.category
     }
 
     render() {
-
         return (
             <div className="article">
                 <div className="container-fluid">

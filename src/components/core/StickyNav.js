@@ -4,13 +4,12 @@ import {Link} from "react-router-dom";
 class StickyNav extends React.Component {
     constructor(props) {
         super(props)
-        this.props = {...props}
     }
 
     render() {
         return(
             <div className="basepage__nav__container container-fluid sticky">
-                <nav className="row basepage__nav">
+                <nav className="row basepage__nav justify-content-center">
                     <div className="col-push-12">
                         <div className="basepage__nav-logo">
                         </div>

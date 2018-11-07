@@ -48,10 +48,11 @@ class HomePage extends React.Component {
                                            React.createElement(route.component, {...props, ...route})}
                                 />
                             ))}
+
                             <Route component={NoMatch} status={404}/>
                         </Switch>
                     </div>
-                    <Footer content='Abhi toh main jawan hun'/>
+                    <Footer/>
                 </div>
             </Router>
         )

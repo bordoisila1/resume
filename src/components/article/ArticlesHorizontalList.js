@@ -31,7 +31,7 @@ class ArticlesHorizontalList extends React.Component {
                         <div className="container col-8">
                             {this.state.articles.map((item, index) => (
                                 <div key={index} className="articles__item row m-l-2">
-                                    <Link to={`${item.url}${item.path}`}>
+                                    <Link to={`${this.props.match.path}${item.path}`}>
                                         {/*<img src={item.leftImage} className="articles__image col-2"></img>*/}
                                         <h2 className="articles__title text-left">
                                             {item.title}
