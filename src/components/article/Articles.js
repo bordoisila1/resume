@@ -1,6 +1,7 @@
 import React from 'react'
 import '../../styles/articles.css'
 import Article from '../article/Article'
+import PlainChoiceText from '../article/PlainChoiceText'
 import ArticlesHorizontalList from "./ArticlesHorizontalList";
 import {NoMatch} from "../core/NoMatch";
 import {Route, Switch} from "react-router-dom";
@@ -20,7 +21,8 @@ class Articles extends React.Component {
     render() {
         return (
             <div className="container">
-                <ArticlesHorizontalList articles={this.props.articles} match={this.match}/>
+                <div className='text-center'>Coming soon</div>
+                {/*<ArticlesHorizontalList articles={this.props.articles} match={this.match}/>
                 <div className="container-fluid">
                     <div className="row">
                         <div className="col">
@@ -37,16 +39,12 @@ class Articles extends React.Component {
                                  <Article article={article} />}
                        />
                     ))}
-                    <Route path={this.match.path} exact={true} component={ChooseArticle}/>
+                    <Route path={this.match.path} exact={true} component={PlainChoiceText}/>
                     <Route component={NoMatch} status={404}/>
-                </Switch>
+                </Switch>*/}
             </div>
         )
     }
-}
-
-const ChooseArticle = () => {
-    return (<h4>Please choose an article</h4>)
 }
 
 export default Articles

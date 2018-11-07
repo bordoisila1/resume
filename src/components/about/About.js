@@ -4,9 +4,9 @@ import '../../styles/about.css'
 
 export const About = () => (
     <div>
-        <div className="text_box"><h2 className="border">ABOUT ME</h2></div>
-        <div className="container">
-            <div className="row">
+        <div><h6>ABOUT ME</h6></div>
+        <div>
+            <div>
                 {aboutMeItems.map((item, index) =>(
                     <>
                     <AboutBox item={item} key={index}/>
@@ -19,12 +19,11 @@ export const About = () => (
 );
 
 const AboutBox = ({item, key}) => (
-    <div className="col about_grid_item rounded hvr-bounce-out">
-        <h5>{item.title}</h5>
+    <div>
+        <h6>{item.title}</h6>
         <a href={item.url}
            target="_blank">
-            <img className="grid_image rounded"
-                 src={item.img}/>
+            <img src={item.img}/>
         </a>
     </div>
 )

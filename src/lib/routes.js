@@ -1,6 +1,6 @@
 import React from 'react'
 import {Home, Interests, About, Contact, Articles} from '../components'
-import interests from './interests'
+import articles from './articles'
 
 export const navRoutes = [
     {
@@ -10,28 +10,22 @@ export const navRoutes = [
         component: Home
     },
     {
-        path: "/about-me",
-        exact: false,
-        label: "About me",
-        component: About
-    },
-    {
         path: "/interests",
         exact: false,
         label: "Interests",
         component: Interests
     },
     {
-        path: "/contact-me",
-        exact: false,
-        label: "Contact me",
-        component: Contact
-    },
-    {
         path: "/articles",
         exact: false,
         label: "Articles",
         component: Articles,
-        articles: interests
+        articles: articles
+    },
+    {
+        path: "/contact-me",
+        exact: false,
+        label: "Contact me",
+        component: Contact
     }
 ];

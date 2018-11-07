@@ -6,7 +6,7 @@ class Article extends React.Component {
     constructor(props) {
         super(props)
         this.title = _dps(this.props.article.title)
-        this.description = _dps(this.props.article.description)
+        this.description = this.props.article.description
         this.leftImge = _dps(this.props.article.leftImage)
         this.rightImage = _dps(this.props.article.rightImage)
         this.category = this.props.category

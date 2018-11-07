@@ -42,7 +42,7 @@
 @media (min-width: 1200px) {
     .interest_flex_container .row{
         flex-wrap: nowrap !important;
-        overflow: scroll;
+        overflow: auto;
         overflow-y: hidden;
         scroll-behavior: auto !important;
     }
