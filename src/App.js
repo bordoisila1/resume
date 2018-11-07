@@ -4,23 +4,22 @@ import { BrowserRouter as Router } from "react-router-dom";
 import './App.css'
 import Spinner from 'react-spinkit'
 
-class App extends Component {
+class App extends Component {/*
 
     state = {
         loading: true
     };
 
     componentDidMount() {
-        // the setTimeout just simulates an async action, after which the component will render the content
-        setTimeout(() => this.setState({ loading: false }), 1500);
-    }
+        setTimeout(() => this.setState({ loading: false }), 150000);
+    }*/
     
     render() {
-        const { loading } = this.state;
+        //const { loading } = this.state;
 
-        if(loading) { // if your component doesn't have to wait for an async action, remove this block
+        /*if(loading) { // if your component doesn't have to wait for an async action, remove this block
             return <Spinner className="loading" name="ball-zig-zag" color="red"/>
-        }
+        }*/
 
         return (
             <Router>
