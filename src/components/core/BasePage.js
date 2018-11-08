@@ -40,7 +40,6 @@ class HomePage extends React.Component {
                             this.state.defaultBodyPaddingTop}}>
                         <Switch>
                             {navRoutes.map((route, index) => (
-                                //Creates a Route that takes a path and renders a React Element based on the props being passed
                                 <Route key={index}
                                        exact={route.exact}
                                        path={route.path}
