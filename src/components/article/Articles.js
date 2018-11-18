@@ -7,10 +7,6 @@ import {NoMatch} from "../core/NoMatch";
 import {Route, Switch} from "react-router-dom";
 
 class Articles extends React.Component {
-    handleClick(e) {
-
-    }
-
     constructor(props) {
         super(props)
         this.match = this.props.match
@@ -22,7 +18,7 @@ class Articles extends React.Component {
         return (
             <div className="container">
                 <div className='text-center'>Coming soon</div>
-                {/*<ArticlesHorizontalList articles={this.props.articles} match={this.match}/>
+                <ArticlesHorizontalList articles={this.props.articles} match={this.match}/>
                 <div className="container-fluid">
                     <div className="row">
                         <div className="col">
@@ -41,7 +37,7 @@ class Articles extends React.Component {
                     ))}
                     <Route path={this.match.path} exact={true} component={PlainChoiceText}/>
                     <Route component={NoMatch} status={404}/>
-                </Switch>*/}
+                </Switch>
             </div>
         )
     }

@@ -1,0 +1,85 @@
+/*For phones only*/
+@media (max-width: 599px) {
+    /*Interests flex box styles */
+    .flags_flex_container .row{
+        flex-wrap: nowrap !important;
+        overflow: scroll;
+    }
+
+    .flags_flex_container img {
+        max-width: 80px;
+        max-height: 64px;
+    }
+
+    .news-card__image img {
+        max-width: 150px !important;
+        max-height: 120px !important;
+    }
+
+    .news-card__description {
+        display: none;
+    }
+
+    .news-card__description.show {
+        display: inline-block;
+    }
+}
+
+/*For Tablet portrait up*/
+@media (min-width: 600px) {
+    .flags_flex_container .row{
+        flex-wrap: nowrap !important;
+        overflow: scroll;
+    }
+
+    .news-card__image img {
+        max-width: 150px !important;
+        max-height: 120px !important;
+    }
+}
+
+/*For Tablet landscape up*/
+@media (min-width: 900px) {
+    .flags_flex_container .row{
+        flex-wrap: nowrap !important;
+        overflow: scroll;
+    }
+
+}
+
+/*For-desktop-up*/
+@media (min-width: 1200px) {
+    .flags_flex_container .row{
+        flex-wrap: nowrap !important;
+        overflow: auto;
+        overflow-y: hidden;
+        scroll-behavior: auto !important;
+    }
+
+    .news-card__image img {
+        max-width: 300px !important;
+        max-height: 240px !important;
+    }
+}
+
+/*For BIG Desktop up*/
+@media (min-width: 1800px) {
+
+}
+
+@media all {
+    .flags_flex_container .row {
+        overflow-y: hidden;
+    }
+
+    .news-card__source-name {
+        font-weight: bold;
+    }
+
+    .news-card__source-published-at {
+        font-weight: lighter;
+        font-style: italic;
+        color: #888888;
+        font-size: small;
+    }
+}
