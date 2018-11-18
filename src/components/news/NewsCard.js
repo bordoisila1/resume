@@ -7,10 +7,19 @@ class NewsCard extends React.Component {
         super(props)
     }
 
-    handleViewMore(e) {
+    handleViewDescription(e) {
         e.stopPropagation()
-        console.log(e.target)
-
+        if(e.target && e.target.closest('.news-card')) {
+            const parent = e.target.closest('.news-card')
+            const descriptionNode = parent.querySelector('.news-card__description')
+            if(descriptionNode && descriptionNode.classList) {
+                descriptionNode.classList.toggle('show')
+            }
+            const readMoreIconNode = parent.querySelector('.news-card__read-more')
+            if(readMoreIconNode && readMoreIconNode.classList) {
+                readMoreIconNode.classList.toggle('hide')
+            }
+        }
     }
 
     render() {
@@ -19,7 +28,7 @@ class NewsCard extends React.Component {
             return (
                 <div className='container news-card'>
                     <div className='row news-card__title'>
-                        <div className='col'>
+                        <div className='col' onClick={this.handleViewDescription.bind(this)}>
                             <h5>{newsItem.title}</h5>
                         </div>
                     </div>
@@ -36,12 +45,14 @@ class NewsCard extends React.Component {
                     <div className='row'>
                         <div className='container'>
                             <div className='row'>
-                                <div className='col col-md-4 news-card__image' onClick={this.handleViewMore.bind(this)}>
+                                <div className='col col-md-4'>
                                     <img alt=''
                                          className='img-fluid'
                                          src={newsItem.leftImage}
+                                         onClick={this.handleViewDescription.bind(this)}
                                     />
                                 </div>
+                                <div className='col-12 news-card__read-more'><img src='/images/icons/readMore.svg' onClick={this.handleViewDescription.bind(this)}/></div>
                                 <div className={`col-12 ${newsItem.description ? 'col-md-8' : ''} news-card__description`}>
                                     {
                                         newsItem.description?
@@ -51,7 +62,7 @@ class NewsCard extends React.Component {
                                     <span>
                                         <a target='_blank'
                                            href={newsItem.url}>
-                                            Read more at
+                                            <span>{this.props.readMoreLabel}</span>
                                             <span>
                                                 <strong>
                                                     {newsItem.source.name}
@@ -63,7 +74,6 @@ class NewsCard extends React.Component {
                             </div>
                         </div>
                     </div>
-                    <hr/>
                 </div>
             )
         }
@@ -80,7 +90,9 @@ NewsCard.propTypes = {
     alt: PropTypes.string,
     description: PropTypes.string.isRequired,
     source: PropTypes.object.isRequired,
-    publishedAt: PropTypes.string
+    publishedAt: PropTypes.string,
+    newsItem: PropTypes.string.isRequired,
+    readMoreLabel: PropTypes.string.isRequired
 };
 
 NewsCard.defaultProps = {
@@ -93,7 +105,9 @@ NewsCard.defaultProps = {
     alt: '',
     description: '',
     source: {},
-    publishedAt: ''
+    publishedAt: '',
+    newsItem: {},
+    readMoreLabel: "Read more at "
 };
 
 export default NewsCard

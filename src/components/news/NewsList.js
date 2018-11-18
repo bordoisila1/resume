@@ -12,7 +12,7 @@ class NewsList extends React.Component {
         if(newsItems && newsItems.news) {
             return(
                 <div>
-                    <div className='container-fluid'>
+                    <div className='container-fluid news-list__container'>
                         {newsItems.news.map((item, index)=> (
                             <div className='row' key={index}>
                                 <NewsCard newsItem={item}/>
