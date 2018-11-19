@@ -11,14 +11,14 @@ class Home extends React.Component {
 
     handleFlagClick(e) {
         e.stopPropagation();
-        console.log('Fetching Country based news for '
-            + e.target.getAttribute('value'))
+        const currentCountry = e.target.getAttribute('value')
         this.fetchCountryNews(
             this.state.countryNewsUrlPrefix,
-            e.target.getAttribute('value'))
+            currentCountry)
             .then((data) => {
                 this.setState({
-                    newsItems: JSON.parse(data)
+                    newsItems: JSON.parse(data),
+                    country: currentCountry
                 })
             })
     }
@@ -77,6 +77,7 @@ class Home extends React.Component {
             <>
                 <News countries={this.state.countries}
                       newsItems={this.state.newsItems}
+                      currentCountry={this.state.country}
                       handleFlagClick={this.handleFlagClick.bind(this)}/>
             </>
         )

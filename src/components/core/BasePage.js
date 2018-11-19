@@ -15,10 +15,14 @@ class HomePage extends React.Component {
     }
 
     componentDidMount() {
-        this.setState({
-            navbarContainer:document.querySelector('.basepage__nav__container'),
-            footerContainer:document.querySelector('.basepage__footer__container')
-        })
+        new Promise((resolve, reject) => {
+
+        }).then(
+            this.setState({
+                navbarContainer:document.querySelector('.basepage__nav__container'),
+                footerContainer:document.querySelector('.basepage__footer__container')
+            })
+        )
         window.onwheel = this.hideFooter
     }
 
@@ -36,7 +40,7 @@ class HomePage extends React.Component {
                     <StickyNav navRoutes={navRoutes}/>
                     <div className="basepage__body__container" style={{
                         paddingTop: this.state.navbarContainer ?
-                            this.state.navbarContainer:
+                            this.state.navbarContainer.clientHeight :
                             this.state.defaultBodyPaddingTop}}>
                         <Switch>
                             {navRoutes.map((route, index) => (

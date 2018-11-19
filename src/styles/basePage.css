@@ -12,12 +12,20 @@
     .basepage__nav-links.container > ul {
         padding: 0 0 0 0 !important;
     }
+
+    .basepage__container {
+        padding-top: 70px;
+    }
 }
 
 /*For Tablet portrait up*/
 @media (min-width: 600px) {
     .basepage__nav-links li {
         display: inline-block;
+    }
+
+    .basepage__body__container {
+        padding-top: 129px;
     }
 }
 
@@ -55,7 +63,7 @@
     }
 
 
-    .basepage__footer__container, .basepage__footer__container:hover {
+    /*.basepage__footer__container, .basepage__footer__container:hover {
         left: 0;
         bottom: 0;
         width: 100%;
@@ -70,7 +78,7 @@
         opacity: 0.3;
         visibility: visible;
         transition: ease-in 3000ms;
-    }
+    }*/
 
     .hide {
         visibility: hidden;
@@ -105,11 +113,11 @@
         position: fixed;
     }
 
-    .footerLogo img{
+    /*.footerLogo img{
         height: 20px;
     }
 
     .footerTitle a:visited, .footerTitle a:hover {
         color: #bdbdbd;
-    }
+    }*/
 }

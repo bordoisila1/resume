@@ -17,7 +17,9 @@ class News extends React.Component {
                 Flags Banner - Makes call to Countries
                 A Single News Card List - Expandable with Read more directing to the actual Website
                 */}
-                <FlagsBanner countries={this.props.countries} handleFlagClick={this.props.handleFlagClick}/>
+                <FlagsBanner countries={this.props.countries}
+                             handleFlagClick={this.props.handleFlagClick}
+                             currentCountry={this.props.currentCountry}/>
                 <NewsList newsItems={this.props.newsItems}/>
             </div>
         )

@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types';
 import '../../styles/news.css'
+import SocialShare from '../core/SocialShare'
 
 class NewsCard extends React.Component {
     constructor(props) {
@@ -32,6 +33,8 @@ class NewsCard extends React.Component {
                             <h5>{newsItem.title}</h5>
                         </div>
                     </div>
+                    {/*Social Share*/}
+                    <SocialShare/>
                     <div className='row news-card__source-name'>
                         <div className='col'>
                             {newsItem.source.name}
@@ -42,7 +45,7 @@ class NewsCard extends React.Component {
                             {newsItem.publishedAt}
                         </div>
                     </div>
-                    <div className='row'>
+                    <div className='row news-card__description-image-container'>
                         <div className='container'>
                             <div className='row'>
                                 <div className='col col-md-4'>
@@ -53,6 +56,7 @@ class NewsCard extends React.Component {
                                     />
                                 </div>
                                 <div className='col-12 news-card__read-more'><img src='/images/icons/readMore.svg' onClick={this.handleViewDescription.bind(this)}/></div>
+
                                 <div className={`col-12 ${newsItem.description ? 'col-md-8' : ''} news-card__description`}>
                                     {
                                         newsItem.description?
