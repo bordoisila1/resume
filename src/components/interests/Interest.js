@@ -39,17 +39,3 @@ export const Interests = ({ match }) =>
         </div>
     );
 
-/*const Interest = ({ match }) => (
-    <div>
-       <Modal description={getInterestText(match.params.interestId)} display={true}/>
-    </div>
-);*/
-
-/*
-const getInterestText = (interestId, defaultDescription = "No description available") => {
-    if(interestId !== undefined) {
-        let description = interests.find(item => item.interestId === interestId)["description"]
-        return description !== undefined && description !== "" ? description : defaultDescription
-    }
-    return "Wait, what ?"
-}*/

@@ -1,10 +1,10 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 import {navRoutes} from "../../lib/routes";
-import '../../styles/basePage.css'
 import {NoMatch} from './NoMatch'
 import StickyNav from './StickyNav'
 import Footer from './Footer'
+import '../../styles/basePage.css'
 
 class HomePage extends React.Component {
     constructor(props) {
@@ -15,27 +15,15 @@ class HomePage extends React.Component {
     }
 
     componentDidMount() {
-        new Promise((resolve, reject) => {
-
-        }).then(
+        new Promise((resolve, reject) => {}).then(
             this.setState({
-                navbarContainer:document.querySelector('.basepage__nav__container'),
-                footerContainer:document.querySelector('.basepage__footer__container')
+                navbarContainer:document.querySelector('.basepage__nav__container')
             })
         )
-        window.onwheel = this.hideFooter
-    }
-
-    hideFooter = (e) =>  {
-        if(this.state.footerContainer && !this.state.footerContainer.className.includes('hide')) {
-            this.state.footerContainer.classList.add('hide')
-            setInterval(() => this.state.footerContainer.classList.remove('hide'), 3000)
-        }
     }
 
     render() {
         return (
-            <Router>
                 <div>
                     <StickyNav navRoutes={navRoutes}/>
                     <div className="basepage__body__container" style={{
@@ -51,13 +39,11 @@ class HomePage extends React.Component {
                                            React.createElement(route.component, {...props, ...route})}
                                 />
                             ))}
-
                             <Route component={NoMatch} status={404}/>
                         </Switch>
                     </div>
                     <Footer/>
                 </div>
-            </Router>
         )
     }
 }

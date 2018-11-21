@@ -55,9 +55,12 @@ class NewsCard extends React.Component {
                                          onClick={this.handleViewDescription.bind(this)}
                                     />
                                 </div>
-                                <div className='col-12 news-card__read-more'><img src='/images/icons/readMore.svg' onClick={this.handleViewDescription.bind(this)}/></div>
+                                <div className='col-12 news-card__read-more'><img
+                                    src='/images/icons/readMore.svg'
+                                    onClick={this.handleViewDescription.bind(this)}/></div>
 
-                                <div className={`col-12 ${newsItem.description ? 'col-md-8' : ''} news-card__description`}>
+                                <div
+                                    className={`col-12 ${newsItem.description ? 'col-md-8' : ''} news-card__description`}>
                                     {
                                         newsItem.description?
                                         newsItem.description.substring(0,newsItem.description.indexOf('['))
@@ -95,7 +98,7 @@ NewsCard.propTypes = {
     description: PropTypes.string.isRequired,
     source: PropTypes.object.isRequired,
     publishedAt: PropTypes.string,
-    newsItem: PropTypes.string.isRequired,
+    newsItem: PropTypes.object.isRequired,
     readMoreLabel: PropTypes.string.isRequired
 };
 

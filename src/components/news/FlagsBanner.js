@@ -1,5 +1,4 @@
 import React from 'react'
-import request from "request";
 import Spinner from 'react-spinkit'
 import '../../styles/news.css'
 
@@ -54,7 +53,6 @@ class FlagsBanner extends React.Component {
                             {countries.map((item, index) =>
                                 <a key={index} // This needs to be converted to LINK
                                    onClick={this.props.handleFlagClick}
-                                   href='#'
                                     className='col'>
                                     <img className='flags__image' value={item.code} src={item.flag}/>
                                 </a>

@@ -18,7 +18,8 @@ class Home extends React.Component {
             .then((data) => {
                 this.setState({
                     newsItems: JSON.parse(data),
-                    country: currentCountry
+                    country: currentCountry,
+                    countryChosen: true
                 })
             })
     }
@@ -55,20 +56,22 @@ class Home extends React.Component {
         })
     }
 
-    componentWillMount() {
-        //Fetch countries
-        this.fetchCountryFlags(this.state.countriesUrl)
-            .then((data) => {
-                this.setState({
-                    countries: JSON.parse(data)
-                })
-            });
+    componentDidMount() {
+        if(!this.state.countryChosen) {
+            //Fetch countries
+            this.fetchCountryFlags(this.state.countriesUrl)
+                .then((data) => {
+                    this.setState({
+                        countries: JSON.parse(data)
+                    })
+                });
 
-        this.fetchCountryNews(this.state.countryNewsUrlPrefix, this.state.country).then((data) => {
-            this.setState({
-                newsItems: JSON.parse(data)
+            this.fetchCountryNews(this.state.countryNewsUrlPrefix, this.state.country).then((data) => {
+                this.setState({
+                    newsItems: JSON.parse(data)
+                })
             })
-        })
+        }
     }
 
     render() {
