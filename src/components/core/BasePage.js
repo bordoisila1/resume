@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, Switch } from "react-router-dom";
+import { Route, Switch, Redirect } from "react-router-dom";
 import {navRoutes} from "../../lib/routes";
 import {NoMatch} from './NoMatch'
 import StickyNav from './StickyNav'
@@ -32,14 +32,19 @@ class HomePage extends React.Component {
                             this.state.defaultBodyPaddingTop}}>
                         <Switch>
                             {navRoutes.map((route, index) => (
-                                <Route key={index}
-                                       exact={route.exact}
+                                <Route key={index}// Needed to let /a/b served instead of /a when /a/b is called
                                        path={route.path}
                                        render={(props) =>
                                            React.createElement(route.component, {...props, ...route})}
                                 />
                             ))}
-                            <Route component={NoMatch} status={404}/>
+                            <Route render = {(props) => <Redirect
+                                to={{
+                                    pathname: "/news", // Redirecting to news by default
+                                    state: { from: props.location }
+                                }}
+                            />}/>
+                            <Route render={NoMatch} status={404}/>
                         </Switch>
                     </div>
                     <Footer/>

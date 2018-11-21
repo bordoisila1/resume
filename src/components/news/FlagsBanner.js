@@ -8,6 +8,7 @@ class FlagsBanner extends React.Component {
     }
 
     fetchFlag = (country, countries) => {
+        console.log('*****' + this.props.currentCountry)
         return (countries.filter(country => country.code === this.props.currentCountry)[0].flag)
     }
 

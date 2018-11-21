@@ -4,7 +4,7 @@ import articles from './articles'
 
 export const navRoutes = [
     {
-        path: "/",
+        path: "/news",
         exact: true,
         label: "Home",
         component: Home
