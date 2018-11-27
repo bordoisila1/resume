@@ -7,6 +7,7 @@ import request from "request";
 class News extends React.Component {
     constructor(props) {
         super(props)
+        console.log('constructor::News')
         this.prefix = 'http://localhost:5000/api/v1/news/'
         this.state = {}
         this.fetchCountryNews(this.prefix, props.currentCountry).then((data) => {
@@ -17,6 +18,7 @@ class News extends React.Component {
     }
 
     fetchCountryNews(prefix, country) {
+        console.log('fetchcountryNews::News')
         console.log('****Fetching for ' + country)
         return new Promise((resolve, reject) => {
             let options = {
@@ -33,16 +35,23 @@ class News extends React.Component {
         })
     }
 
-    componentWillReceiveProps(nextProps) {
-        this.fetchCountryNews(this.prefix, nextProps.currentCountry).then((data) => {
-            this.setState({
-                newsItems: JSON.parse(data)
+    /*componentWillReceiveProps(nextProps) {
+        console.log('cWRP::News')
+        if(this.props.currentCountry !== nextProps.currentCountry) {
+            this.fetchCountryNews(this.prefix, nextProps.currentCountry).then((data) => {
+                this.setState({
+                    newsItems: JSON.parse(data)
+                })
             })
-        })
-    }
+        }
+    }*/
+
+    /*getDerivedStateFromProps() {
+        //TODO - Move Logic here
+    }*/
 
     render() {
-        console.log('Rendering News for *** ' + this.props.currentCountry)
+        console.log('render::News')
         return (
             <div>
                 <FlagsBanner countries={this.props.countries}

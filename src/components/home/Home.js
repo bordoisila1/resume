@@ -50,13 +50,18 @@ class Home extends React.Component {
     render() {
         return (
             <>
-                <Route exact path={`${this.props.match.url}`} render={(props) => <News {...props}
-                                                                                 countries={this.state.countries}
-                                                                                 currentCountry={this.props.country}
-                                                                                 handleFlagClick={this.handleFlagClick.bind(this)}/>}/>
-                <Route exact path={`${this.props.match.url}/:topicId`} render={(props) =>{
-                    console.log(JSON.stringify(props.match.params) + '^^&&^^&&')
-                    return(<News {...props} countries={this.state.countries}
+                <Route exact
+                       path={`${this.props.match.url}`}
+                       render={(props) => <News {...props}
+                                                countries={this.state.countries}
+                                                currentCountry={this.props.country}
+                                                handleFlagClick={this.handleFlagClick.bind(this)}/>}/>
+                <Route exact path={`${this.props.match.url}/:topicId`}
+                       render={(props) =>{
+                    return(<News {...props}
+                                 key={props.match.params.topicId}
+                                 /*Super Cool. Key change will reconstruct the whole component and hence, instead of relying on the getDerivedStateFromProps method we are just updating the key*/
+                                 countries={this.state.countries}
                                  currentCountry={props.match.params.topicId}
                                  handleFlagClick={this.handleFlagClick.bind(this)}/>)}}/>
             </>
