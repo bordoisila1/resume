@@ -2,21 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ab5d0c22-e213-408b-9d22-7388ae6a5481" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/config/default.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/config/dev.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/config/production.json" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" afterPath="$PROJECT_DIR$/package-lock.json" />
-      <change beforePath="$PROJECT_DIR$/src/components/core/BasePage.js" afterPath="$PROJECT_DIR$/src/components/core/BasePage.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/core/Footer.js" afterPath="$PROJECT_DIR$/src/components/core/Footer.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/core/NoMatch.js" afterPath="$PROJECT_DIR$/src/components/core/NoMatch.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/home/Home.js" afterPath="$PROJECT_DIR$/src/components/home/Home.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/news/FlagsBanner.js" afterPath="$PROJECT_DIR$/src/components/news/FlagsBanner.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/news/News.js" afterPath="$PROJECT_DIR$/src/components/news/News.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/news/NewsApiUtil.js" afterPath="$PROJECT_DIR$/src/components/news/NewsApiUtil.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/news/NewsList.js" afterPath="$PROJECT_DIR$/src/components/news/NewsList.js" />
-      <change beforePath="$PROJECT_DIR$/src/lib/routes.js" afterPath="$PROJECT_DIR$/src/lib/routes.js" />
-      <change beforePath="$PROJECT_DIR$/src/styles/basePage.css" afterPath="$PROJECT_DIR$/src/styles/basePage.css" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -64,26 +51,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="interests.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/lib/interests.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="homepage-content.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/lib/homepage-content.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="417">
-              <caret line="33" column="102" lean-forward="false" selection-start-line="33" selection-start-column="102" selection-end-line="33" selection-end-column="102" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="constants.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/lib/constants.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -104,7 +71,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="News.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="News.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/news/News.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="444">
@@ -112,6 +79,26 @@
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="workspace.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -191,7 +178,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/utils/sanitize.js" />
         <option value="$PROJECT_DIR$/src/lib/mixed-articles.js" />
         <option value="$PROJECT_DIR$/src/components/BasePage.js" />
         <option value="$PROJECT_DIR$/src/components/interests/Articles.js" />
@@ -242,6 +228,7 @@
         <option value="$PROJECT_DIR$/src/components/home/Home.js" />
         <option value="$PROJECT_DIR$/src/components/news/NewsApiUtil.js" />
         <option value="$PROJECT_DIR$/src/components/news/News.js" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -511,12 +498,12 @@
       <workItem from="1542072008938" duration="624000" />
       <workItem from="1542254225355" duration="543000" />
       <workItem from="1542308523171" duration="88086000" />
-      <workItem from="1543289844034" duration="7489000" />
+      <workItem from="1543289844034" duration="7593000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="290518000" />
+    <option name="totallyTimeSpent" value="290622000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="1057" extended-state="6" />
@@ -595,15 +582,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/components/router/index.js" />
-    <entry file="file://$PROJECT_DIR$/package-lock.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="13959" column="17" lean-forward="false" selection-start-line="13959" selection-start-column="11" selection-end-line="13959" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/images/banana_large.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -1013,6 +991,22 @@
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
