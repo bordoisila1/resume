@@ -1,15 +1,20 @@
-import React from 'react'
-import '../../styles/news.css'
-import FlagsBanner from './FlagsBanner'
+import React from 'react';
+import '../../styles/news.css';
+import FlagsBanner from './FlagsBanner';
 import NewsList from "./NewsList";
 import request from "request";
 
 class News extends React.Component {
     constructor(props) {
-        super(props)
-        console.log('constructor::News')
-        this.prefix = 'http://localhost:5000/api/v1/news/'
-        this.state = {}
+        super(props);
+        console.log('constructor::News');
+        let NEWS_API = (process.env.NODE_ENV !== 'production'
+            ? 'http://localhost:5000'
+            : 'https://www.nigoni-mw.appspot.com')
+            + '/api/v1/news/';
+        this.prefix = NEWS_API;
+        console.log(process.env.NODE_ENV + ' *** ' + this.prefix)
+        this.state = {};
         this.fetchCountryNews(this.prefix, props.currentCountry).then((data) => {
             this.setState({
                 newsItems: JSON.parse(data)
@@ -35,21 +40,6 @@ class News extends React.Component {
         })
     }
 
-    /*componentWillReceiveProps(nextProps) {
-        console.log('cWRP::News')
-        if(this.props.currentCountry !== nextProps.currentCountry) {
-            this.fetchCountryNews(this.prefix, nextProps.currentCountry).then((data) => {
-                this.setState({
-                    newsItems: JSON.parse(data)
-                })
-            })
-        }
-    }*/
-
-    /*getDerivedStateFromProps() {
-        //TODO - Move Logic here
-    }*/
-
     render() {
         console.log('render::News')
         return (
@@ -58,7 +48,6 @@ class News extends React.Component {
                              handleFlagClick={this.props.handleFlagClick}
                              currentCountry={this.props.currentCountry}/>
                 <NewsList newsItems={this.state.newsItems}/>
-                />
             </div>
         )
     }

@@ -1,0 +1,6 @@
+{
+  "newsApi": {
+    "prefix": "https://nigoni-mw.appspot.com/api/v1/news/",
+    "defaultCountry": "us"
+  }
+}

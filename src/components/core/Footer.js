@@ -13,9 +13,8 @@ class Footer extends React.Component {
         return(
             <div className="footer-container container">
                 <div className="row news-card">
-                    <div className="col">
-                        THIS IS THE NEW SHIT
-                    </div>
+                    <footer className="col">
+                    </footer>
                 </div>
             </div>
         )

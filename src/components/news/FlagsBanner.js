@@ -1,5 +1,4 @@
 import React from 'react'
-import Spinner from 'react-spinkit'
 import '../../styles/news.css'
 
 class FlagsBanner extends React.Component {
@@ -64,11 +63,7 @@ class FlagsBanner extends React.Component {
             )
         } else {
             return (
-                <div className="h-100 row align-items-center">
-                    <div className="col-4">
-                        <Spinner className="loading" name="ball-zig-zag" color="red"/>
-                    </div>
-                </div>
+                <div></div>
             )
         }
     }

@@ -78,7 +78,9 @@ Home.propTypes = {
 Home.defaultProps = {
     country: 'us', // Default Country
     countries: {},
-    countriesUrl: 'http://localhost:5000/api/v1/countries',
+    countriesUrl: (process.env.NODE_ENV !== 'production'
+        ? 'http://localhost:5000'
+        : 'https://www.nigoni-mw.appspot.com') + '/api/v1/countries',
 };
 
 export default Home

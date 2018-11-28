@@ -9,7 +9,7 @@ export const navRoutes = [
         label: "Home",
         component: Home
     },
-    {
+    /*{
         path: "/interests",
         exact: false,
         label: "Interests",
@@ -21,7 +21,7 @@ export const navRoutes = [
         label: "Articles",
         component: Articles,
         articles: articles
-    },
+    },*/
     {
         path: "/contact-me",
         exact: false,

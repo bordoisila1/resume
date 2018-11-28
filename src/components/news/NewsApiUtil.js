@@ -23,15 +23,11 @@ class NewsApiUtil extends React.Component {
                             </>
                         ))}
                     </div>
-
                 </div>
             )
         } else {
             return (
-                <div class="h-100 row align-items-center">
-                    <div className="col">
-                        LOADING...
-                    </div>
+                <div>
                 </div>
             )
         }

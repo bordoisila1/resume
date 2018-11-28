@@ -38,16 +38,18 @@ class HomePage extends React.Component {
                                            React.createElement(route.component, {...props, ...route})}
                                 />
                             ))}
-                            <Route render = {(props) => <Redirect
+                            <Route exact path="/" render = {(props) => <Redirect
                                 to={{
                                     pathname: "/news", // Redirecting to news by default
                                     state: { from: props.location }
                                 }}
-                            />}/>
+                                    />
+                            }
+                            />
                             <Route render={NoMatch} status={404}/>
                         </Switch>
                     </div>
-                    <Footer/>
+                    {/*<Footer/>*/}
                 </div>
         )
     }

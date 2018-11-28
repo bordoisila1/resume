@@ -8,7 +8,7 @@ export const NoMatch = ({ location }) => (
             </h1>
         </div>
         <div className="row justify-content-md-center">
-            <img src=""/>
+            <img src="/images/404_duckhunt.webp"/>
         </div>
     </div>
 );

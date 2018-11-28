@@ -24,9 +24,9 @@ class NewsList extends React.Component {
             )
         } else {
             return (
-                <div className="h-100 row align-items-center">
-                    <div className="col">
-                        LOADING...
+                <div className="container">
+                    <div className="row text-center">
+                        <div className="col">LOADING NEWS...</div>
                     </div>
                 </div>
             )
